@@ -1,24 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+import { EpisodeDetailsPage } from './episode_details.page';
 
-import { Tab2Page } from './episode_details.page';
+describe('EpisodeDetailsPage', () => {
+  let component: EpisodeDetailsPage;
+  let fixture: ComponentFixture<EpisodeDetailsPage>;
 
-describe('Tab2Page', () => {
-  let component: Tab2Page;
-  let fixture: ComponentFixture<Tab2Page>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [Tab2Page],
-      imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [ EpisodeDetailsPage ],
+      imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Tab2Page);
+    fixture = TestBed.createComponent(EpisodeDetailsPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }));
 
   it('should create', () => {
     expect(component).toBeTruthy();
