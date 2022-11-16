@@ -22,7 +22,7 @@
     <!-- Get all character and place icons -->
 
     <ion-item class="movie-info" lines="none">
-      <ion-icon name="id-card-outline"></ion-icon>
+      <ion-icon name="finger-print"></ion-icon>
       <ion-card-header> Id: {{ character?.char_id }}</ion-card-header>
     </ion-item>
 
@@ -37,7 +37,7 @@
     </ion-item>
 
     <ion-item class="movie-info" lines="none" *ngFor="let occup of character?.occupation; let i = index">
-      <ion-icon name="flask" slot="start"></ion-icon>
+      <ion-icon name="briefcase"></ion-icon>
       Occupation: {{ occup }}
     </ion-item>
 
