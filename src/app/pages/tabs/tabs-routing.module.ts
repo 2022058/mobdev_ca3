@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+
 import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
@@ -8,32 +9,74 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'characters',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../characters/characters.module').then(
+                (m) => m.CharactersPageModule
+              ),
+          },
+          {
+            path: ':id',
+            loadChildren: () =>
+              import('../character_details/character_details.module').then(
+                (m) => m.CharacterDetailsPageModule
+              ),
+          },
+        ],
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../characters/characters.module').then(m => m.Tab2PageModule)
+        path: 'episodes',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../episodes/episodes.module').then(
+                (m) => m.EpisodesPageModule
+              ),
+          },
+          {
+            path: ':id',
+            loadChildren: () =>
+              import('../episode_details/episode_details.module').then(
+                (m) => m.EpisodeDetailsPageModule
+              ),
+          },
+        ],
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../episodes/episodes.module').then(m => m.Tab3PageModule)
+        path: 'quotes',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../quotes/quotes.module').then((m) => m.QuotesPageModule),
+          },
+        ],
       },
       {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
-      }
-    ]
+        path: 'deaths',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../deaths/deaths.module').then((m) => m.DeathsPageModule),
+          },
+        ],
+      },
+    ],
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
-  }
+    redirectTo: '/tabs/characters',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
 export class TabsPageRoutingModule {}
