@@ -32,12 +32,12 @@
     </ion-item>
 
     <ion-item class="movie-info" lines="none">
-      <ion-icon name="calendar" slot="start"></ion-icon>
+      <ion-icon name="today"></ion-icon>
       Birthday: {{ character?.birthday }}
     </ion-item>
 
     <ion-item class="movie-info" lines="none" *ngFor="let occup of character?.occupation; let i = index">
-      <ion-icon name="bag-outline" slot="start"></ion-icon>
+      <ion-icon name="flask" slot="start"></ion-icon>
       Occupation: {{ occup }}
     </ion-item>
 
@@ -47,7 +47,7 @@
     </ion-item>
 
     <ion-item class="movie-info" lines="none">
-      <ion-icon name="checkmark-circle" slot="start"></ion-icon>
+      <ion-icon name="person" slot="start"></ion-icon>
       Nickname: {{ character?.nickname }}
     </ion-item>
 
@@ -62,12 +62,12 @@
     </ion-item>
 
     <ion-item class="movie-info" lines="none">
-      <ion-icon name="attach-outline" slot="start"></ion-icon>
+      <ion-icon name="albums" slot="start"></ion-icon>
       Category: {{ character?.category }}
     </ion-item>
 
     <ion-item class="movie-info" lines="none">
-      <img src="assets/download.jpg">
+      <img src="assets/BreakingBad.jpg">
     </ion-item>
   </ion-card>
 </ion-content>
