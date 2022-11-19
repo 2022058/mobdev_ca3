@@ -11,20 +11,28 @@ You are required to build an Ionic application that can consume Breaking Bad API
 https://breakingbadapi.com and display the data in 4 tabs – Characters, Episodes, Quotes, Death
 Count. Complete the following steps in order to produce a working Breaking Bad Fandom application:
 
-1.	Set up the environment: utilise GitPod scripting to automatically pre-install Ionic and Angular CLI, install modules and plugins, generate the required pages and service(s).
-
-2.	Set up the core app aspects: routing, tabs and introduce a Back-Navigation functionality for all the required tab subpages (Characters and Episodes).
-
-3.	Consume API data: use Observables, ngFor and ngIf logic provided by Angular.
-
-4.	Improve the design: change the default Ionic UI, theming & CSS variables and showcase the ability to use appropriate Ionic Icons for the tabs.
-
-5.	Possess a coherent commit history on GitHub (at least 8 valid and logical commits) and have your final submission code present in your Git repository. Your GitHub repo containing the full Ionic project must be called – mobdev_ca3. Also reference here any solution or code from someone else that you used in your CA by providing links to the original materials either in Dockerfile comments or inside README.md file.
-
-6.	Record a voiced-over video screencast in MP4 format (10 minutes max) showing how your app works and how exactly you decided to go about making it.
-
-
 # Execution of this project
 
+This project was based on the creation of Ionic app to demonstrate the Breaking Bad API https://breakingbadapi.com and demonstrate the content in four categories: characters, episodes, quotes and death count.
 
+# Step by step to create the application:
 
+- first I created the repository on Github
+- downloaded the repository on my Desktop
+- Imported repository files to VSCode
+- It was necessary to download some extensions in VSCode like Angular, Explore-cantainer and Node-modules to proceed with the project.
+- I synchronized the VSCode with GitHub to carry out the committees automatically.
+
+# The following steps were taken to complete the application:
+
+GItPoded scripts were used to configure the environment and automatically pre-install Ionic and Angular CLI;
+
+App layout configuration and table creation: characters, episodes, quotes and death count. its sub-tables with Back-Navigation functionality for all Character Details and Episode details sub-tables;
+
+Consume API data: use Observables, ngFor and ngIf logic provided by Angular;
+
+The icons for the design of the tables were used from the Ionic/Ionicons website;
+
+# Browser
+
+The application is in the Browser: http://localhost:4200
