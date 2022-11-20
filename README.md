@@ -15,7 +15,7 @@ Count. Complete the following steps in order to produce a working Breaking Bad F
 
 # Execution of this project
 
-This project was based on the creation of Ionic app to demonstrate the Breaking Bad API https://breakingbadapi.com and demonstrate the content in four categories: characters, episodes, quotes and death count.
+This project was based on the creation of an Ionic application to consume the Breaking Bad API https://breakingbadapi.com and demonstrate the content in four categories: characters, episodes, quotes and death count.
 
 # Step by step to create the application:
 
@@ -29,12 +29,32 @@ This project was based on the creation of Ionic app to demonstrate the Breaking 
 
 GItPoded scripts were used to configure the environment and automatically pre-install Ionic and Angular CLI;
 
-App layout configuration and table creation: characters, episodes, quotes and death count. its sub-tables with Back-Navigation functionality for all Character Details and Episode details sub-tables;
+App Layout Setup and Table Creation: Change tables created in the GitHub repository for characters, episodes, quotes, and kill counts, then create new sub-tables with Back-Navigation functionality for the Character details and Episode details sub-tables ;
 
-Consume API data: use Observables, ngFor and ngIf logic provided by Angular;
+API data was consumed: use Observables, ngFor and ngIf logic provided by Angular;
 
-The icons for the design of the tables were used from the Ionic/Ionicons website;
+The icons for the design of the tables were used from the Ionic/Ionicons website.
 
 # Browser
 
 The application is in the Browser: http://localhost:4200
+
+# Referense
+
+https://moodle.cct.ie/mod/url/view.php?id=116156
+
+https://moodle.cct.ie/mod/url/view.php?id=117222
+
+https://moodle.cct.ie/mod/url/view.php?id=117812
+
+breakingbadapi.com. (n.d.). The Breaking Bad API. [online] Available at: https://breakingbadapi.com/documentation [Accessed 13 Nov. 2022].
+
+Code Swag (2020). How to create your first mobile app using Ionic Angular. YouTube. Available at: https://www.youtube.com/watch?v=whnA4Eod3xo [Accessed 13 Nov. 2022].
+
+MDN Web Docs. (2019). HTML elements reference. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element [Accessed 10 Nov. 2022].
+
+Ionic (n.d.). Your First Ionic App: Angular - Ionic Documentation. [online] Ionic Docs. Available at: https://ionicframework.com/docs/angular/your-first-app [Accessed 13 Nov. 2022].
+
+
+https://ionic.io/ionicons
+
